@@ -23,16 +23,17 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: clamp(1.5rem, 3vw, 10rem);
   font-weight: 100;
   color: rgb(0, 0, 0);
-  padding: 25px 25px 0;
+  padding: 35px 35px 0;
 }
 
 .text_button {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  width: 65%;
 }
 
 .text {
@@ -43,15 +44,15 @@ h1 {
 }
 
 .text .reveal {
-  border-bottom: 3px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
   margin-right: 7px;
   margin-bottom: 2px;
 }
 
 .text .reveal h2 {
   visibility: hidden;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: clamp(1.2rem, 2vw, 3rem);
+  font-weight: 200;
   color: rgb(0, 0, 0);
 }
 
@@ -62,11 +63,12 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 50px auto;
-  width: 25em;
+  max-width: 25em;
+  width: 80%;
   height: 20em;
   background-color: rgba(125, 125, 125, 0.581);
   border-radius: 5px;
-  box-shadow: 1px 1px 10px rgb(26, 26, 26);
+  box-shadow: 1px 1px 10px rgb(26 26 26);
 }
 .card_buttons button {
   width: 220px;
@@ -140,7 +142,6 @@ h1 {
   animation-delay: 0.2s;
   animation-fill-mode: forwards;
 }
-
 
 @keyframes animation {
   to {
